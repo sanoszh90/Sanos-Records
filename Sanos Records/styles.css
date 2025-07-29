@@ -1,0 +1,189 @@
+/* ===== RESET Y ESTILOS BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== ENCABEZADO ===== */
+header {
+    background-color: #000;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.main-title {
+    color: #0f0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4.5rem;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+/* ===== NAVEGACIÓN ===== */
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.main-nav li {
+    margin: 0 1.5rem;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: #333;
+    color: #0f0;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+main {
+    margin: 0 auto;
+    padding: 5px;
+    max-width: 800px;
+    flex-grow: 1;
+    width: 60%;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-top: 8.5em;
+}
+
+.visitors-list {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.update-info {
+    margin-top: 2rem;
+}
+
+/* ===== TIPOGRAFÍAS ESPECIALES ===== */
+.fuente-especial {
+    font-family: "Courier New", monospace;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid #333;
+}
+
+/* ===== ESTILOS PARA PÁGINAS SECUNDARIAS ===== */
+.back-button-body {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 20px auto;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #df0;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.back-button-body:hover {
+    background-color: #0f0;
+    color: #000;
+}
+
+.content-section {
+    margin-top: 3rem;
+}
+
+.content-list {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.content-list li {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: #111;
+    border-left: 3px solid rgba(180, 182, 178, 0.938);
+    transition: transform 0.3s ease;
+}
+
+.content-list li:hover {
+    transform: translateX(10px);
+}
+.content-list li:hover {
+     border-left: 3px solid rgb(18, 18, 19);
+}
+
+
+
+
+/* ===== ESTILOS PARA ELEMENTOS DESTACADOS ===== */
+
+
+.content-list li.highlight {
+    border-left: 3px solid rgb(43, 255, 0); /* Amarillo para resaltar */
+    background-color: #54664f; /* Fondo un poco más claro */
+}
+.content-list li.highlight:hover {
+    border-left: 3px solid rgb(70, 95, 72); /* Naranja al pasar el mouse */
+}
+
+
+
+/* Opcional: Variantes de colores para diferentes categorías */
+.content-list li.highlight2 {
+    border-left: 3px solid rgb(3, 169, 219); /* Azul */
+}
+.content-list li.highlight2:hover {
+    border-left: 3px solid rgb(18, 18, 19); /* Naranja al pasar el mouse */
+}
+
+
+.content-list li.highlight3 {
+    border-left: 3px solid #f00; /* Rojo */
+}
+.content-list li.highlight3:hover {
+    border-left: 3px solid rgb(18, 18, 19); /* Naranja al pasar el mouse */
+}
+
+
+.content-list li.highlight4 {
+    border-left: 3px solid rgb(210, 224, 7); /* Rojo */
+}
+.content-list li.highlight4:hover {
+    border-left: 3px solid rgb(37, 37, 37); /* Naranja al pasar el mouse */
+}
+
+
+.content-list li.highlight5 {
+    border-left: 3px solid #f00;
+    background-color: #4e3434;
+   }
+.content-list li.highlight4:hover {
+    border-left: 3px solid rgb(109, 69, 66); /* Naranja al pasar el mouse */
+}
