@@ -13,175 +13,626 @@
         <a href="index.html" class="back-button-body">Regresar</a>
     </header>
 
-    <main>
+    <main class="gallery-page">
         <section class="content-section">
-            <h2>Lista de películas y series (Orden Alfabético)</h2>
+            <h2>Películas y series</h2>
+            <p>Pósters de las películas y series que he visto y considero que valen la pena. Marco dorado = mis favoritas de siempre. Marco plateado-azul = excelentes, sobresalientes entre las sobresalientes. Marco rojo = objetivamente malas, pero muy entretenidas y divertidas. Sin marco de color = muy buenas, por encima del promedio.</p>
 
-        <p>Organizadas alfabéticmanete y categorizadas a partir de los siguientes parámetros, a continuación se enlistan las series y películas que he visto y considero valen la pena ver.</p>
-        
-        <ul class="content-list">
-            <h4>Películas y series que son:</h4>
-             <li class="highlight">Lo mejor de lo mejor, mis favorit@s de siempre</li>
-             <li class="highlight2"> Excelentes, sobresalientes entre las sobresalientes</li>
-             <li>Muy buenas, sobresalientes del promedio</li>
-             <li class="highlight3">Objetivamente malas, pero muy entretenidas y divertidas</li>
+            <!--
+                Cómo añadir una película o serie nueva:
+                1. Copia un bloque <figure class="gallery-item">...</figure> completo (respeta el orden alfabético).
+                2. Cambia el texto del alt y el título/año en el figcaption.
+                3. Reemplaza portadas/placeholder.svg por la ruta del póster (ej. portadas/oppenheimer.jpg).
+                4. Clases opcionales en .book-frame: "favorite" (dorado), "excellent" (plateado-azul), "fun-bad" (rojo). Sin clase = muy buena.
+                Cuando existan subpáginas por título, envuelve el .book-frame en <a href="titulo-slug.html">.
+            -->
+
+            <ul class="gallery-grid">
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame favorite">
+                            <img src="portadas/placeholder.svg" alt="Póster de 2001: A Space Odyssey">
+                        </div>
+                        <figcaption>2001: A Space Odyssey<span class="book-meta">1968</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame fun-bad">
+                            <img src="portadas/placeholder.svg" alt="Póster de Amar te duele">
+                        </div>
+                        <figcaption>Amar te duele<span class="book-meta">2002</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Amigos de armas">
+                        </div>
+                        <figcaption>Amigos de armas<span class="book-meta">2016</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Avatar - Saga">
+                        </div>
+                        <figcaption>Avatar - Saga<span class="book-meta">2009</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Bastardos sin gloria">
+                        </div>
+                        <figcaption>Bastardos sin gloria<span class="book-meta">2009</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Batman">
+                        </div>
+                        <figcaption>Batman<span class="book-meta">2022</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Birdman">
+                        </div>
+                        <figcaption>Birdman<span class="book-meta">2014</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Buenos muchachos">
+                        </div>
+                        <figcaption>Buenos muchachos<span class="book-meta">1990</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Después del apocalipsis">
+                        </div>
+                        <figcaption>Después del apocalipsis<span class="book-meta">2024</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Diamantes en bruto">
+                        </div>
+                        <figcaption>Diamantes en bruto<span class="book-meta">2019</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Dr. House">
+                        </div>
+                        <figcaption>Dr. House<span class="book-meta">2004</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de El caballero de la noche - Saga">
+                        </div>
+                        <figcaption>El caballero de la noche - Saga<span class="book-meta">2005</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame favorite">
+                            <img src="portadas/placeholder.svg" alt="Póster de El cristal encantado">
+                        </div>
+                        <figcaption>El cristal encantado<span class="book-meta">1982</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de El juego de la fortuna">
+                        </div>
+                        <figcaption>El juego de la fortuna<span class="book-meta">2011</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de El laberinto del fauno">
+                        </div>
+                        <figcaption>El laberinto del fauno<span class="book-meta">2006</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de El lobo de Wall Street">
+                        </div>
+                        <figcaption>El lobo de Wall Street<span class="book-meta">2013</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de El hombre de acero">
+                        </div>
+                        <figcaption>El hombre de acero<span class="book-meta">2013</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de El rey">
+                        </div>
+                        <figcaption>El rey<span class="book-meta">2019</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de El renacido">
+                        </div>
+                        <figcaption>El renacido<span class="book-meta">2015</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de El señor de los anillos - Saga">
+                        </div>
+                        <figcaption>El señor de los anillos - Saga<span class="book-meta">2001</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Fury">
+                        </div>
+                        <figcaption>Fury<span class="book-meta">2014</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Ghost in the Shell">
+                        </div>
+                        <figcaption>Ghost in the Shell<span class="book-meta">1995</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Gigantes de acero">
+                        </div>
+                        <figcaption>Gigantes de acero<span class="book-meta">2011</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Game of Thrones">
+                        </div>
+                        <figcaption>Game of Thrones<span class="book-meta">2011</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Gremlins">
+                        </div>
+                        <figcaption>Gremlins<span class="book-meta">1984</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Hellboy">
+                        </div>
+                        <figcaption>Hellboy<span class="book-meta">2004</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame favorite">
+                            <img src="portadas/placeholder.svg" alt="Póster de Hereditary">
+                        </div>
+                        <figcaption>Hereditary<span class="book-meta">2018</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de House of the Dragon">
+                        </div>
+                        <figcaption>House of the Dragon<span class="book-meta">2022</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame fun-bad">
+                            <img src="portadas/placeholder.svg" alt="Póster de Inframundo - Saga">
+                        </div>
+                        <figcaption>Inframundo - Saga<span class="book-meta">2003</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Interestelar">
+                        </div>
+                        <figcaption>Interestelar<span class="book-meta">2014</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Jurassic Park - Saga">
+                        </div>
+                        <figcaption>Jurassic Park - Saga<span class="book-meta">1993</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de King Kong">
+                        </div>
+                        <figcaption>King Kong<span class="book-meta">2005</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame favorite">
+                            <img src="portadas/placeholder.svg" alt="Póster de La bruja">
+                        </div>
+                        <figcaption>La bruja<span class="book-meta">2015</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame favorite">
+                            <img src="portadas/placeholder.svg" alt="Póster de La gran apuesta">
+                        </div>
+                        <figcaption>La gran apuesta<span class="book-meta">2015</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de La historia sin fin - Saga">
+                        </div>
+                        <figcaption>La historia sin fin - Saga<span class="book-meta">1984</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Lost">
+                        </div>
+                        <figcaption>Lost<span class="book-meta">2004</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Love, Death & Robots">
+                        </div>
+                        <figcaption>Love, Death & Robots<span class="book-meta">2019</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Los dos papas">
+                        </div>
+                        <figcaption>Los dos papas<span class="book-meta">2019</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Mad Max: Fury Road">
+                        </div>
+                        <figcaption>Mad Max: Fury Road<span class="book-meta">2015</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Narnia - Saga">
+                        </div>
+                        <figcaption>Narnia - Saga<span class="book-meta">2005</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de No mires arriba">
+                        </div>
+                        <figcaption>No mires arriba<span class="book-meta">2021</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Nosotros los nobles">
+                        </div>
+                        <figcaption>Nosotros los nobles<span class="book-meta">2013</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Ojos bien cerrados">
+                        </div>
+                        <figcaption>Ojos bien cerrados<span class="book-meta">1999</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Oppenheimer">
+                        </div>
+                        <figcaption>Oppenheimer<span class="book-meta">2023</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Parásitos">
+                        </div>
+                        <figcaption>Parásitos<span class="book-meta">2019</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Piratas del Caribe - Saga">
+                        </div>
+                        <figcaption>Piratas del Caribe - Saga<span class="book-meta">2003</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Planeta de los simios: Nuevo Reino">
+                        </div>
+                        <figcaption>Planeta de los simios: Nuevo Reino<span class="book-meta">2024</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de ¿Qué pasó ayer? - Saga">
+                        </div>
+                        <figcaption>¿Qué pasó ayer? - Saga<span class="book-meta">2009</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Ready Player One">
+                        </div>
+                        <figcaption>Ready Player One<span class="book-meta">2018</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Red social">
+                        </div>
+                        <figcaption>Red social<span class="book-meta">2010</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame fun-bad">
+                            <img src="portadas/placeholder.svg" alt="Póster de Resident Evil - Saga">
+                        </div>
+                        <figcaption>Resident Evil - Saga<span class="book-meta">2002</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Rick y Morty">
+                        </div>
+                        <figcaption>Rick y Morty<span class="book-meta">2013</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Rogue One">
+                        </div>
+                        <figcaption>Rogue One<span class="book-meta">2016</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Sandman">
+                        </div>
+                        <figcaption>Sandman<span class="book-meta">2022</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Seven">
+                        </div>
+                        <figcaption>Seven<span class="book-meta">1995</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Shawshank Redemption">
+                        </div>
+                        <figcaption>Shawshank Redemption<span class="book-meta">1994</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Shin Godzilla">
+                        </div>
+                        <figcaption>Shin Godzilla<span class="book-meta">2016</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Star Trek - Saga">
+                        </div>
+                        <figcaption>Star Trek - Saga<span class="book-meta">2009</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Star Wars - Ep. 1 a 6">
+                        </div>
+                        <figcaption>Star Wars - Ep. 1 a 6<span class="book-meta">1977</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Succession">
+                        </div>
+                        <figcaption>Succession<span class="book-meta">2018</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Tenet">
+                        </div>
+                        <figcaption>Tenet<span class="book-meta">2020</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de The Big Bang Theory">
+                        </div>
+                        <figcaption>The Big Bang Theory<span class="book-meta">2007</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Tiempos de guerra">
+                        </div>
+                        <figcaption>Tiempos de guerra<span class="book-meta">2025</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Titanes del Pacífico">
+                        </div>
+                        <figcaption>Titanes del Pacífico<span class="book-meta">2013</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Transformers One">
+                        </div>
+                        <figcaption>Transformers One<span class="book-meta">2024</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Póster de Troya">
+                        </div>
+                        <figcaption>Troya<span class="book-meta">2004</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame excellent">
+                            <img src="portadas/placeholder.svg" alt="Póster de Una esposa de mentiras">
+                        </div>
+                        <figcaption>Una esposa de mentiras<span class="book-meta">2011</span></figcaption>
+                    </figure>
+                </li>
+
             </ul>
-
-        <p>*Los títulos se muestran en español e inglés a base del criterio mio.</p>
-
-
-
-            <ul class="content-list">
-                <h3>A</h3>
-                <li class="highlight">2001: A space odyssey (1968)</li>
-                <li class="highlight3">Amar te duele (2002)</li>
-                <li>Amigos de armas (2016)</li>
-                <li>Avatar - Saga (2009)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>B</h3>
-                <li>Bastardos sin gloria (2009)</li>
-                <li>Batman (2022)</li>
-                <li>Birdman (2014)</li>
-                <li>Buenos muchachos (1990)</li>
-            </ul>
-
-
-            <ul class="content-list">
-                <h3>D</h3>
-                <li class="highlight2">Después del apocalipsis (2024)</li>
-                <li>Diamantes en bruto (2019)</li>
-                <li>Dr. House (2004)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>E</h3>
-                <li class="highlight2">El caballero de la noche - saga (2005)</li>
-                <li class="highlight">El cristal encantado (1982)</li>
-                <li>El juego de la fortuna (2011)</li>
-                <li class="highlight2">El laberinto del fauno (2006)</li>
-                <li>El lobo de Wall Street (2013)</li>
-                <li>El hombre de acero (2013)</li>
-                <li>El rey (2019)</li>
-                <li class="highlight2">El renacido (2015)</li>
-                <li class="highlight2">El señor de los anillos - saga (2001)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>F</h3>
-                <li>Fury (2014)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>G</h3>
-                <li>Ghost in the Shell (1995)</li>
-                <li>Gigantes de acero (2011)</li>
-                <li class="highlight2">Game of Thrones (2011)</li>
-                <li class="highlight2">Gremlins (1984)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>H</h3>
-                <li>Hellboy (2004)</li>
-                <li class="highlight">Hereditary (2018)</li>
-                <li>House of the Dragon: GoT (2022)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>I</h3>
-                <li class="highlight3">Inframundo - saga (2003)</li>
-                <li class="highlight2">Interestelar(2014)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>J</h3>
-                <li class="highlight2">Jurassic Park - saga (1993)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>K</h3>
-                <li class="highlight2">King Kong (2005)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>L</h3>
-                <li class="highlight">La bruja (2015)</li>
-                <li class="highlight">La gran apuesta (2015)</li>
-                <li>La historia sin fin - saga (1984)</li>
-                <li>Lost (2004)</li>
-                <li class="highlight2">Love, Death & Robots (2019)</li>
-                <li>Los dos papas (2019)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>M</h3>
-                <li class="highlight2">Mad max: fury on the road (2015)</li>
-            </ul>
-
-
-            <ul class="content-list">
-                <h3>N</h3>
-                <li class="highlight2">Narnia - saga (2005)</li>
-                <li>No mires arriba (2021)</li>
-                <li>Nosotros los nobles (2013)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>O</h3>
-                <li class="highlight2">Ojos bien cerrados (1999)</li>
-                <li class="highlight2">Oppenheimer (2023)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>P</h3>
-                <li class="highlight2">Parásitos (2019)</li>
-                <li>Piratas del Caribe - saga (2003)</li>
-                <li>Planeta de los simios: Nuevo Reino (2024)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>Q</h3>
-                <li class="highlight2">¿Qué pasó ayer? - saga (2009)</li>
-            </ul>
-
-
-            <ul class="content-list">
-                <h3>R</h3>
-                <li>Ready Player One (2018)</li>
-                <li class="highlight2">Red social (2010)</li>
-                <li class="highlight3">Resident Evil - saga (2002)</li>
-                <li>Rick y Morty (2013)</li>
-                <li>Rogue One (2016)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>S</h3>
-                <li>Sandman (2022)</li>
-                <li class="highlight2">Seven (1995)</li>
-                <li class="highlight2">Shawshank Redemption (1994)</li>
-                <li class="highlight2">Shin Godzilla (2016)</li>
-                <li>Star Trek - saga (2009)</li>
-                <li>Star Wars - Ep1:Ep6 (1977)</li>
-                <li>Succession (2018)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>T</h3>
-                <li class="highlight2">Tenet (2020)</li>
-                <li class="highlight2">The Big Bang Theory (2007)</li>
-                <li class="highlight2">Tiempos de guerra (2025)</li>
-                <li class="highlight2">Titanes del Pacífico (2013)</li>
-                <li>Transformers One (2024)</li>
-                <li>Troya (2004)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>U</h3>
-                <li class="highlight2">Una esposa de mentiras (2011)</li>
-            </ul>
-
-            
 
         </section>
     </main>

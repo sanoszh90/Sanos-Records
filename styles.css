@@ -290,6 +290,18 @@ footer {
     box-shadow: 0 0 22px rgba(46, 204, 113, 0.45), 0 10px 25px rgba(0, 0, 0, 0.6);
 }
 
+/* Marco plateado-azul: excelentes (películas y series) */
+.book-frame.excellent {
+    background: linear-gradient(135deg, #6fa8dc, #2e5c8a);
+    box-shadow: 0 0 22px rgba(111, 168, 220, 0.45), 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Marco rojo: objetivamente malas pero muy entretenidas (películas y series) */
+.book-frame.fun-bad {
+    background: linear-gradient(135deg, #d9534f, #7d2723);
+    box-shadow: 0 0 22px rgba(217, 83, 79, 0.45), 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
 .gallery-item figcaption {
     margin-top: 0.8rem;
     font-size: 0.9rem;
