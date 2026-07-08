@@ -367,6 +367,29 @@ footer {
     color: #3a3a3a;
 }
 
+/* Estrellas individuales, soportan medias estrellas */
+.star-rating .star {
+    display: inline-block;
+    position: relative;
+    color: #3a3a3a;
+}
+
+.star-rating .star.full {
+    color: #ffd700;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+.star-rating .star.half::after {
+    content: "★";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    color: #ffd700;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
 .rating-number {
     font-family: "Courier New", monospace;
     color: #999;
