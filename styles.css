@@ -187,3 +187,99 @@ footer {
 .content-list li.highlight4:hover {
     border-left: 3px solid rgb(109, 69, 66); /* Naranja al pasar el mouse */
 }
+
+/* ===== GALERÍA DE LIBROS ===== */
+.gallery-page {
+    max-width: 1200px;
+    width: 90%;
+}
+
+.gallery-section-title {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #0f0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.gallery-divider {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 4rem 0 1rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 2rem;
+    margin-top: 1rem;
+    list-style: none;
+}
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Marco tipo galería de arte: madera exterior + mat interior */
+.book-frame {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #4a3a2a, #2c2114);
+    padding: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover .book-frame {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.75);
+}
+
+.book-frame img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border: 10px solid #efe9db;
+}
+
+/* Marco dorado: libros favoritos */
+.book-frame.favorite {
+    background: linear-gradient(135deg, #caa03c, #8a6a1f);
+    box-shadow: 0 0 22px rgba(212, 175, 55, 0.45), 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Marco verde: prioridades de la lista de deseos */
+.book-frame.priority {
+    background: linear-gradient(135deg, #2f9e4f, #185c2c);
+    box-shadow: 0 0 22px rgba(46, 204, 113, 0.45), 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.gallery-item figcaption {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.gallery-item .book-meta {
+    display: block;
+    color: #999;
+    font-size: 0.75rem;
+    font-family: "Courier New", monospace;
+    margin-top: 0.2rem;
+}

@@ -12,137 +12,370 @@
         <a href="index.html" class="back-button-body">Regresar</a>
     </header>
 
-    <main>
+    <main class="gallery-page">
         <section class="content-section">
-            <h2>Lista de Libros (Orden Alfabético)</h2>
+            <h2>Mi biblioteca</h2>
+            <p>Portadas de los libros que he leído y los que tengo en la mira. Marco dorado = uno de mis favoritos de siempre. Marco verde = prioridad dentro de la lista de deseos.</p>
 
-            <p>A continuación se enlistan alfabéticamente obras literarias señaladas cromáticamente en base a los siguientes criterios:  </p>
-        <ul class="content-list">
-            
-             <li class="highlight">Lo mejor de lo mejor, mis favoritos desde siempre </li>
-             <li>Buenos trabajos, merecen ser recordados y me gustaría tenerlos en mi biblioteca</li>
-             <li class="highlight3">Lista de deseos</li>
-             <li class="highlight5">Prioridades de la lista de deseos</li>
+            <!--
+                Cómo añadir un libro nuevo:
+                1. Copia un bloque <figure class="gallery-item">...</figure> completo.
+                2. Cambia el texto del alt y el título/autor/año en el figcaption.
+                3. Reemplaza portadas/placeholder.svg por la ruta de tu imagen (ej. portadas/el-principito.jpg).
+                4. Clases opcionales en .book-frame: "favorite" (marco dorado) y "priority" (marco verde, solo en Lista de deseos).
+                Cuando existan subpáginas por libro, envuelve el .book-frame en <a href="libro-slug.html">.
+            -->
+
+            <h3 class="gallery-section-title">Leídos</h3>
+            <ul class="gallery-grid">
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788408247487-L.jpg" alt="Portada de Astrofísica para gente con prisa">
+                        </div>
+                        <figcaption>Astrofísica para gente con prisa<span class="book-meta">Neil deGrasse Tyson · 2017</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Portada de Breve historia de las doctrinas económicas">
+                        </div>
+                        <figcaption>Breve historia de las doctrinas económicas<span class="book-meta">Moisés Gómez Granillo · 1996</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788491990437-L.jpg" alt="Portada de Breves respuestas a las grandes preguntas">
+                        </div>
+                        <figcaption>Breves respuestas a las grandes preguntas<span class="book-meta">Stephen Hawking · 2018</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788420689739-L.jpg" alt="Portada de Carta al padre">
+                        </div>
+                        <figcaption>Carta al padre<span class="book-meta">Franz Kafka · 1919</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788493664923-L.jpg" alt="Portada de Cómo hacer amigos e influir sobre las personas">
+                        </div>
+                        <figcaption>Cómo hacer amigos e influir sobre las personas<span class="book-meta">Dale Carnegie · 1936</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Portada de Economía en un día">
+                        </div>
+                        <figcaption>Economía en un día<span class="book-meta">Macario Schettino · 2022</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame favorite">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788471662644-L.jpg" alt="Portada de El amor, las mujeres y la muerte">
+                        </div>
+                        <figcaption>El amor, las mujeres y la muerte<span class="book-meta">Arthur Schopenhauer · 2024</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788497942034-L.jpg" alt="Portada de El anticristo">
+                        </div>
+                        <figcaption>El anticristo<span class="book-meta">Friedrich Nietzsche · 1895</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9786074575866-L.jpg" alt="Portada de El arte de pensar">
+                        </div>
+                        <figcaption>El arte de pensar<span class="book-meta">Arthur Schopenhauer · 1851</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9780140258837-L.jpg" alt="Portada de El laberinto de la soledad">
+                        </div>
+                        <figcaption>El laberinto de la soledad<span class="book-meta">Octavio Paz · 1950</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788467738179-L.jpg" alt="Portada de El principito">
+                        </div>
+                        <figcaption>El principito<span class="book-meta">Antoine de Saint-Exupéry · 1943</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame favorite">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788420651996-L.jpg" alt="Portada de Historia del tiempo">
+                        </div>
+                        <figcaption>Historia del tiempo<span class="book-meta">Stephen Hawking · 1988</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788420651361-L.jpg" alt="Portada de La metamorfosis">
+                        </div>
+                        <figcaption>La metamorfosis<span class="book-meta">Franz Kafka · 1915</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788424938963-L.jpg" alt="Portada de Meditaciones">
+                        </div>
+                        <figcaption>Meditaciones<span class="book-meta">Marco Aurelio</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9780802133908-L.jpg" alt="Portada de Pedro Páramo">
+                        </div>
+                        <figcaption>Pedro Páramo<span class="book-meta">Juan Rulfo · 1955</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame favorite">
+                            <img src="https://covers.openlibrary.org/b/isbn/9789505188680-L.jpg" alt="Portada de Psicología de las masas y análisis del yo">
+                        </div>
+                        <figcaption>Psicología de las masas y análisis del yo<span class="book-meta">Sigmund Freud · 1921</span></figcaption>
+                    </figure>
+                </li>
+
             </ul>
 
-        <p>*Se muestra preferentmente el año de la primer edición de cada obra y en su defecto el año de la edición que he leído.</p>
+            <hr class="gallery-divider">
 
-        
-            <ul class="content-list">
-                <h3>A</h3>
-                <li>Astrofísica para gente con prisa – Neil deGrasse Tyson (2017)</li>
+            <h3 class="gallery-section-title">Lista de deseos</h3>
+            <ul class="gallery-grid">
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788434414914-L.jpg" alt="Portada de 50 cosas que hay que saber sobre economía">
+                        </div>
+                        <figcaption>50 cosas que hay que saber sobre economía<span class="book-meta">Edmund Conway</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788434423145-L.jpg" alt="Portada de 50 cosas que hay que saber sobre física cuántica">
+                        </div>
+                        <figcaption>50 cosas que hay que saber sobre física cuántica<span class="book-meta">Joanne Baker · 2007</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9781576602386-L.jpg" alt="Portada de Cómo analizar el mercado">
+                        </div>
+                        <figcaption>Cómo analizar el mercado<span class="book-meta">Deborah Owen y Robin Griffiths · 2008</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Portada de Contrahistoria del pueblo mexicano">
+                        </div>
+                        <figcaption>Contrahistoria del pueblo mexicano<span class="book-meta">Antología de ensayos críticos</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788430938100-L.jpg" alt="Portada de Crítica de la razón pura">
+                        </div>
+                        <figcaption>Crítica de la razón pura<span class="book-meta">Immanuel Kant</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9786073151665-L.jpg" alt="Portada de El arte de hacer preguntas">
+                        </div>
+                        <figcaption>El arte de hacer preguntas<span class="book-meta">Mario Borghino · 2022</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame priority">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788408008545-L.jpg" alt="Portada de El cisne negro">
+                        </div>
+                        <figcaption>El cisne negro<span class="book-meta">Nassim Nicholas Taleb · 2007</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Portada de El mundo como voluntad y representación">
+                        </div>
+                        <figcaption>El mundo como voluntad y representación<span class="book-meta">Arthur Schopenhauer · 1818</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788499929248-L.jpg" alt="Portada de El pueblo soy yo">
+                        </div>
+                        <figcaption>El pueblo soy yo<span class="book-meta">Enrique Krauze</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="portadas/placeholder.svg" alt="Portada de Fundamentos filosóficos de la pedagogía">
+                        </div>
+                        <figcaption>Fundamentos filosóficos de la pedagogía<span class="book-meta">August Messer · 1951</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788434413474-L.jpg" alt="Portada de Historia de la economía">
+                        </div>
+                        <figcaption>Historia de la economía<span class="book-meta">John Kenneth Galbraith · 1987</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9781548630287-L.jpg" alt="Portada de La interpretación de los sueños">
+                        </div>
+                        <figcaption>La interpretación de los sueños<span class="book-meta">Sigmund Freud · 1899</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9780735223790-L.jpg" alt="Portada de Las 10 claves de la realidad">
+                        </div>
+                        <figcaption>Las 10 claves de la realidad<span class="book-meta">Frank Wilczek · 2022</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame priority">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788446049159-L.jpg" alt="Portada de Más allá del principio de placer">
+                        </div>
+                        <figcaption>Más allá del principio de placer<span class="book-meta">Sigmund Freud · 1920</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9781544529127-L.jpg" alt="Portada de No me puedes lastimar">
+                        </div>
+                        <figcaption>No me puedes lastimar<span class="book-meta">David Goggins</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame priority">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788477029267-L.jpg" alt="Portada de Parerga y paralipómena">
+                        </div>
+                        <figcaption>Parerga y paralipómena<span class="book-meta">Arthur Schopenhauer · 1851</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788474230277-L.jpg" alt="Portada de Psicoanálisis de los cuentos de hadas">
+                        </div>
+                        <figcaption>Psicoanálisis de los cuentos de hadas<span class="book-meta">Bruno Bettelheim</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788416677504-L.jpg" alt="Portada de Réquiem por el sueño americano">
+                        </div>
+                        <figcaption>Réquiem por el sueño americano<span class="book-meta">Noam Chomsky</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9789681668419-L.jpg" alt="Portada de Teoría general del empleo, el interés y el dinero">
+                        </div>
+                        <figcaption>Teoría general del empleo, el interés y el dinero<span class="book-meta">John Maynard Keynes · 1936</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9780374533557-L.jpg" alt="Portada de Thinking, fast and slow">
+                        </div>
+                        <figcaption>Thinking, fast and slow<span class="book-meta">Daniel Kahneman · 2011</span></figcaption>
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure>
+                        <div class="book-frame">
+                            <img src="https://covers.openlibrary.org/b/isbn/9788498754681-L.jpg" alt="Portada de Tribus">
+                        </div>
+                        <figcaption>Tribus<span class="book-meta">Seth Godin · 2008</span></figcaption>
+                    </figure>
+                </li>
+
             </ul>
-
-            <ul class="content-list">
-                <h3>B</h3>
-                <li>Breve historia de las doctrinas económicas – Moisés Gómez Granillo (1996)</li>
-                <li>Breves respuestas a las grandes preguntas – Stephen Hawking (2018)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>C</h3>
-                <li>Carta al padre – Franz Kafka (1919)</li>
-                <li>50 cosas que hay que saber sobre economía - Edmund Conway</li>
-                <li>50 cosas que hay que saber sobre física cuántica – Joanne Baker (2007)</li>
-                <li>Cómo analizar el mercado – Deborah Owen y Robin Griffiths (2008)</li>
-                <li>Cómo hacer amigos e influir sobre las personas - Dale Carnegie (1936)</li>
-                <li class="highlight3">Contrahistoria del pueblo mexicano - antología de ensayos criticos(S.F.)</li>
-                <li class="highlight3">Crítica de la razón pura - Immanuel Kant(1781)</li>
-            </ul>
-
-             <ul class="content-list">
-                <h3>D</h3>
-                <li>Diccionario esencial de matemáticas – Larousse (2020)</li>
-                <li>Discurso del método – René Descartes(1637)</li>
-
-
-              </ul>
-
-
-            <ul class="content-list">
-                <h3>E</h3>
-                <li>Economía en un día- Macario Schettino (2022)</li>
-                <li class="highlight">El amor, las mujeres y la muerte – Arthur Schopenhauer (2024)</li>
-                <li>El anticristo – Friedrich Nietzsche (1895)</li>
-                <li class="highlight">El arte del buen vivir – Arthur Schopenhauer (1851)</li>
-                <li>El arte de pensar – Arthur Schopenhauer (2018)</li>
-                <li>El enquiridión – Epicteto (S.F.)</li>
-                <li class="highlight5">El cisne negro - Nassim Nicholas Taleb (2007)</li>
-                <li>El laberinto de la soledad – Octavio Paz (1950)</li>
-                <li class="highlight3">El malestar en la cultura - Sigmund Freud (1930)</li>
-                <li class="highlight3">El mundo como voluntad y representación - Arthur Schopenhauer (1818)</li>
-                <li>Elogio de la locura – Erasmo de Rotterdam (1511)</li>
-                <li>El principito – Antoine de Saint-Exupéry (1943)</li>
-                <li class="highlight3">El yo y el ello - Sigmund Freud (1923)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>F</h3>
-                <li>Fundamentos filosóficos de la pedagogía - August Messer (1951)</li>
-            </ul>
-
-
-
-            <ul class="content-list">
-                <h3>H</h3>
-                <li>Historia de la economía – John Kenneth Galbraith (1987)</li>
-                <li class="highlight">Historia del tiempo – Stephen Hawking (1988)</li>
-            </ul>
-
-
-            <ul class="content-list">
-                <h3>L</h3>
-                <li>La interpretación de los sueños – Sigmund Freud (1899)</li>
-                <li>La metamorfosis – Franz Kafka (1915)</li>
-                <li>Las 10 claves de la realidad – Frank Wilczek (2022)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>M</h3>
-                <li class="highlight3">Más allá del principio de placer - Sigmund Freud (1920)</li>
-                <li>Meditaciones – Marco Aurelio (S.F.)</li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>N</h3>
-                <li class="highlight3">No me puedes lastimar - David Goggins(2018)</li>
-            </ul>
-
-
-            <ul class="content-list">
-                <h3>P</h3>
-                <li class="highlight5">Parerga y paralipómena - Arthur Schopenhauer (1851)</li>
-                <li>Pedro Páramo – Juan Rulfo (1955)</li>
-                <li class="highlight">Psicología de las masas y análisis del yo – Sigmund Freud (1921)</li>
-            </ul>
-
-   
-
-            <ul class="content-list">
-                <h3>R</h3>
-                <li class="highlight3">Réquiem por el sueño americano - Noam Chomsky (2017) </li>
-            </ul>
-
-            <ul class="content-list">
-                <h3>S</h3>
-                <li class="highlight5">Sobre la brevedad de la vida, el ocio y la felicidad - Séneca (S.F)</li>
-            </ul>
-
-
-            <ul class="content-list">
-                <h3>T</h3>
-                <li>Teoría general del empleo, el interés y el dinero – John Maynard Keynes (1936)</li>
-                <li class="highlight3">Thinking, fast and slow - Daniel Kahneman (2011)</li>
-            </ul>
-
-
-
 
         </section>
     </main>
 
     <footer>
-        <p>© 2023 Sanos World - Todos los derechos reservados</p>
+        <p>© 2023 Sanos Company - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
