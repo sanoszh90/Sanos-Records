@@ -239,7 +239,8 @@ footer {
 /* Marco tipo galería de arte: madera exterior + mat interior */
 .book-frame {
     display: block;
-    width: 100%;
+    width: fit-content;
+    margin: 0 auto;
     background: linear-gradient(135deg, #4a3a2a, #2c2114);
     padding: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
@@ -251,12 +252,20 @@ footer {
     box-shadow: 0 16px 30px rgba(0, 0, 0, 0.75);
 }
 
+/* Tamaño estándar de portada para TODOS los libros (mismo tamaño que Carta al padre) */
 .book-frame img {
     display: block;
-    width: 100%;
-    aspect-ratio: 2 / 3;
+    width: 200px;
+    height: 300px;
     object-fit: cover;
     border: 10px solid #efe9db;
+}
+
+@media (max-width: 560px) {
+    .book-frame img {
+        width: 160px;
+        height: 240px;
+    }
 }
 
 /* Marco dorado: libros favoritos */
