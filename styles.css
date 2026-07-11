@@ -459,3 +459,25 @@ footer {
     color: #777;
     font-style: italic;
 }
+
+/* Fragmentos que son, en realidad, citas de otro autor dentro de la obra */
+.fragments-list li.fragment-quoted {
+    border-left: 2px solid #ffd700;
+    padding-left: 0.9rem;
+    font-style: italic;
+    color: #ddd;
+}
+
+.fragment-source {
+    display: block;
+    margin-top: 0.35rem;
+    font-family: "Courier New", monospace;
+    font-size: 0.78rem;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    color: #999;
+}
+
+.fragment-source::before {
+    content: "— ";
+}
