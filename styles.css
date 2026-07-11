@@ -443,12 +443,17 @@ footer {
 }
 
 .fragments-list {
-    list-style: none;
+    list-style: disc;
+    padding-left: 1.3rem;
 }
 
 .fragments-list li {
     margin-bottom: 0.8rem;
     line-height: 1.7;
+}
+
+.fragments-list li::marker {
+    color: #555;
 }
 
 .fragments-list li:last-child {
@@ -461,11 +466,28 @@ footer {
 }
 
 /* Fragmentos que son, en realidad, citas de otro autor dentro de la obra */
+/* Con autor identificado: color propio para distinguirlas del resto */
 .fragments-list li.fragment-quoted {
-    border-left: 2px solid #ffd700;
+    border-left: 2px solid #c0392b;
     padding-left: 0.9rem;
     font-style: italic;
-    color: #ddd;
+    color: #e0a89f;
+}
+
+.fragments-list li.fragment-quoted::marker {
+    color: #c0392b;
+}
+
+/* Sin autor identificado: mismo trato pero en un tono más pálido */
+.fragments-list li.fragment-quoted-anon {
+    border-left: 2px solid #c0392b;
+    padding-left: 0.9rem;
+    font-style: italic;
+    color: #6e6e6e;
+}
+
+.fragments-list li.fragment-quoted-anon::marker {
+    color: #c0392b;
 }
 
 .fragment-source {
